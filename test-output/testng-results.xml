@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="203661" started-at="2019-11-18T10:46:18Z" finished-at="2019-11-18T10:49:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="203661" started-at="2019-11-18T10:46:18Z" finished-at="2019-11-18T10:49:42Z">
+      <class name="com.automation.hackathon.VisualAITests">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="6541" started-at="2019-11-18T12:46:18Z" finished-at="2019-11-18T12:46:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test1_LoginPageUIElementsTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test1_LoginPageUIElementsTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test1_LoginPageUIElementsTest" duration-ms="15398" started-at="2019-11-18T12:46:25Z" finished-at="2019-11-18T12:46:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1_LoginPageUIElementsTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="907" started-at="2019-11-18T12:46:40Z" finished-at="2019-11-18T12:46:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test1_LoginPageUIElementsTest status=SUCCESS method=VisualAITests.Test1_LoginPageUIElementsTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="5892" started-at="2019-11-18T12:46:41Z" finished-at="2019-11-18T12:46:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test2_DataDrivenTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test2_DataDrivenTest" duration-ms="14684" started-at="2019-11-18T12:46:47Z" data-provider="login" finished-at="2019-11-18T12:47:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Both Username and Password must be present]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login Test - Both Username and Password fields are empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2_DataDrivenTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="865" started-at="2019-11-18T12:47:02Z" finished-at="2019-11-18T12:47:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test2_DataDrivenTest status=SUCCESS method=VisualAITests.Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="5732" started-at="2019-11-18T12:47:03Z" finished-at="2019-11-18T12:47:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test2_DataDrivenTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test2_DataDrivenTest" duration-ms="13800" started-at="2019-11-18T12:47:08Z" data-provider="login" finished-at="2019-11-18T12:47:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password must be present]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login Test - Password field is empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2_DataDrivenTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="839" started-at="2019-11-18T12:47:22Z" finished-at="2019-11-18T12:47:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test2_DataDrivenTest status=SUCCESS method=VisualAITests.Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="4449" started-at="2019-11-18T12:47:23Z" finished-at="2019-11-18T12:47:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test2_DataDrivenTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test2_DataDrivenTest" duration-ms="13661" started-at="2019-11-18T12:47:28Z" data-provider="login" finished-at="2019-11-18T12:47:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username must be present]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login Test - Username field is empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2_DataDrivenTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="954" started-at="2019-11-18T12:47:41Z" finished-at="2019-11-18T12:47:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test2_DataDrivenTest status=SUCCESS method=VisualAITests.Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="4180" started-at="2019-11-18T12:47:42Z" finished-at="2019-11-18T12:47:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test2_DataDrivenTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test2_DataDrivenTest" duration-ms="12601" started-at="2019-11-18T12:47:46Z" data-provider="login" finished-at="2019-11-18T12:47:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login Test - Success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2_DataDrivenTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="839" started-at="2019-11-18T12:47:59Z" finished-at="2019-11-18T12:48:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test2_DataDrivenTest status=SUCCESS method=VisualAITests.Test2_DataDrivenTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="5366" started-at="2019-11-18T12:48:00Z" finished-at="2019-11-18T12:48:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test3_TableSortTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test3_TableSortTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test3_TableSortTest" duration-ms="19335" started-at="2019-11-18T12:48:05Z" finished-at="2019-11-18T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3_TableSortTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="864" started-at="2019-11-18T12:48:24Z" finished-at="2019-11-18T12:48:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test3_TableSortTest status=SUCCESS method=VisualAITests.Test3_TableSortTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="10425" started-at="2019-11-18T12:48:25Z" finished-at="2019-11-18T12:48:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test4_CanvasChartTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test4_CanvasChartTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test4_CanvasChartTest" duration-ms="35235" started-at="2019-11-18T12:48:36Z" finished-at="2019-11-18T12:49:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4_CanvasChartTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="853" started-at="2019-11-18T12:49:11Z" finished-at="2019-11-18T12:49:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test4_CanvasChartTest status=SUCCESS method=VisualAITests.Test4_CanvasChartTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="beforeMethod" is-config="true" duration-ms="7809" started-at="2019-11-18T12:49:12Z" finished-at="2019-11-18T12:49:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automation.hackathon.VisualAITests.Test5_DynamicContentTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Test5_DynamicContentTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="Test5_DynamicContentTest" duration-ms="21514" started-at="2019-11-18T12:49:20Z" finished-at="2019-11-18T12:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test5_DynamicContentTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac]" name="afterMethod" is-config="true" duration-ms="837" started-at="2019-11-18T12:49:41Z" finished-at="2019-11-18T12:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test5_DynamicContentTest status=SUCCESS method=VisualAITests.Test5_DynamicContentTest()[pri:0, instance:com.automation.hackathon.VisualAITests@16c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.automation.hackathon.VisualAITests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
