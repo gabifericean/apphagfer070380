@@ -74,7 +74,7 @@ public class TestBase {
 			.timeouts()
 			.implicitlyWait(Configuration.WAIT_FIVE_SECONDS,
 					TimeUnit.SECONDS)
-					.pageLoadTimeout(Configuration.WAIT_TWENTYFIVE_SECONDS, TimeUnit.SECONDS);
+					.pageLoadTimeout(Configuration.WAIT_FIVE_SECONDS, TimeUnit.SECONDS);
 			driver.get(Configuration.URL);
 		}
 	
@@ -82,7 +82,7 @@ public class TestBase {
 	// 							Applitools 
 	// ==============================================================
 	public static void setBatch(){
-		batch = new BatchInfo("Login Test Visual AI");
+		batch = new BatchInfo("Hackathon");
 		runner = new ClassicRunner();
 		eyes = new Eyes(runner);
 		eyes.setApiKey(Configuration.APPLITOOLS_API_KEY);

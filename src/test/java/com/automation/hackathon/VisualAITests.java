@@ -1,12 +1,7 @@
 package com.automation.hackathon;
 
-import java.util.Collections;
-import java.util.List;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import com.applitools.eyes.MatchLevel;
 import com.applitools.eyes.RectangleSize;
 import com.automation.hackathon.commons.Configuration;
@@ -32,7 +27,7 @@ public class VisualAITests extends TestBase {
 	 */
 	@Test
 	public void Test1_LoginPageUIElementsTest(){
-		eyes.open(driver, "Login App", "Test1_LoginPageUIElementsTest", new RectangleSize(800, 800));		
+		eyes.open(driver, "Login App", "Test1_LoginPageUIElementsTest");		
 		eyes.checkWindow("Login Window");		
 		eyes.closeAsync();
 	}
@@ -69,7 +64,7 @@ public class VisualAITests extends TestBase {
 	 */
 	@Test(dataProvider = "login")
 	public void Test2_DataDrivenTest(String username, String password, String expectedMessage, String testName){
-		eyes.open(driver, "Login App", "Test2_DataDrivenTest "+testName, new RectangleSize(800, 800));
+		eyes.open(driver, "Login App", "Test2_DataDrivenTest "+testName);
 		LoginFormPage loginPage = new LoginFormPage(driver);
 		loginPage.fillUsernameTextbox(username);
 		loginPage.fillPasswordTextbox(password);
@@ -91,15 +86,18 @@ public class VisualAITests extends TestBase {
 	@Test
 	public void Test3_TableSortTest(){
 		eyes.open(driver, "Login App", "Test3_TableSortTest");
-		
 		LoginFormPage loginPage = new LoginFormPage(driver);
 		loginPage.fillUsernameTextbox("username");
 		loginPage.fillPasswordTextbox("password");
 		loginPage.clickLoginButton();
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		FinancialOverviewPage financialOverview = new FinancialOverviewPage(driver);
 
 		financialOverview.clickAmountLink();
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		eyes.checkWindow("Amount - sorted");
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		eyes.closeAsync();	
 		
 	}
@@ -121,13 +119,14 @@ public class VisualAITests extends TestBase {
 		loginPage.fillPasswordTextbox("password");
 		loginPage.clickLoginButton();
 		FinancialOverviewPage financialOverview = new FinancialOverviewPage(driver);
-		waitFor(Configuration.WAIT_MILLIS_MED_1);
+		waitFor(Configuration.WAIT_MILLIS_MED_3);
 		financialOverview.clickFinancialOverviewCompareExpensesLink();
 		waitFor(Configuration.WAIT_MILLIS_MED_1);
 		eyes.checkWindow("Compare expenses - defauld preview");		
 		financialOverview.clickShowDataForNextYearLink();
 		waitFor(Configuration.WAIT_MILLIS_MED_1);
 		eyes.checkWindow("Compare expenses - after click on Show data for next year");
+		waitFor(Configuration.WAIT_MILLIS_MED_3);
 		eyes.closeAsync();	
 	}	
 
@@ -140,16 +139,19 @@ public class VisualAITests extends TestBase {
 	 */
 	@Test
 	public void Test5_DynamicContentTest(){	
-		//driver.navigate().to("https://demo.applitools.com/hackathon.html?showAd=true");
-		driver.navigate().to("https://demo.applitools.com/hackathonV2.html?showAd=true");
+		driver.navigate().to(Configuration.URL_TEST_5);
 		eyes.open(driver, "Login App", "Test5_DynamicContentTest");
 		eyes.setMatchLevel(MatchLevel.LAYOUT2);
 		LoginFormPage loginPage = new LoginFormPage(driver);
+		waitFor(Configuration.WAIT_MILLIS_MED_2);
 		loginPage.fillUsernameTextbox("username");
 		loginPage.fillPasswordTextbox("password");
 		loginPage.clickLoginButton();
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		eyes.checkWindow("Dynamic Content");
-		
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
+		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		eyes.closeAsync();
 	}	
 	
