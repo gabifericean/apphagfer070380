@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 18 12:46:18 EET 2019</td>
+<td>Started on:</td><td>Tue Nov 19 11:32:39 EET 2019</td>
 </tr>
-<tr><td>Total time:</td><td>203 seconds (203661 ms)</td>
+<tr><td>Total time:</td><td>174 seconds (174610 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,53 +67,103 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.hackathon.VisualAITests.Test1_LoginPageUIElementsTest()'><b>Test1_LoginPageUIElementsTest</b><br>Test class: com.automation.hackathon.VisualAITests</td>
-<td></td>
-<td>15</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
-<tr>
-<td title='com.automation.hackathon.VisualAITests.Test2_DataDrivenTest()'><b>Test2_DataDrivenTest</b><br>Test class: com.automation.hackathon.VisualAITests<br>Parameters: , , Both Username and Password must be present, Login Test - Both Username and Password fields are empty</td>
-<td></td>
-<td>14</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
-<tr>
-<td title='com.automation.hackathon.VisualAITests.Test2_DataDrivenTest()'><b>Test2_DataDrivenTest</b><br>Test class: com.automation.hackathon.VisualAITests<br>Parameters: user, , Password must be present, Login Test - Password field is empty</td>
-<td></td>
-<td>13</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
-<tr>
-<td title='com.automation.hackathon.VisualAITests.Test2_DataDrivenTest()'><b>Test2_DataDrivenTest</b><br>Test class: com.automation.hackathon.VisualAITests<br>Parameters: , pass, Username must be present, Login Test - Username field is empty</td>
-<td></td>
-<td>13</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
-<tr>
-<td title='com.automation.hackathon.VisualAITests.Test2_DataDrivenTest()'><b>Test2_DataDrivenTest</b><br>Test class: com.automation.hackathon.VisualAITests<br>Parameters: user, pass, , Login Test - Success</td>
-<td></td>
-<td>12</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
-<tr>
-<td title='com.automation.hackathon.VisualAITests.Test3_TableSortTest()'><b>Test3_TableSortTest</b><br>Test class: com.automation.hackathon.VisualAITests</td>
-<td></td>
-<td>19</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
-<tr>
-<td title='com.automation.hackathon.VisualAITests.Test4_CanvasChartTest()'><b>Test4_CanvasChartTest</b><br>Test class: com.automation.hackathon.VisualAITests</td>
-<td></td>
-<td>35</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
-<tr>
-<td title='com.automation.hackathon.VisualAITests.Test5_DynamicContentTest()'><b>Test5_DynamicContentTest</b><br>Test class: com.automation.hackathon.VisualAITests</td>
-<td></td>
-<td>21</td>
-<td>com.automation.hackathon.VisualAITests@16c48ac</td></tr>
+<td title='com.automation.hackathon.TraditionalTests.Test1_LoginPageUIElementsTest()'><b>Test1_LoginPageUIElementsTest</b><br>Test class: com.automation.hackathon.TraditionalTests</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Form header is not correct 
+ expected [true] but found [false],
+	Password label is not present  
+ expected [true] but found [false],
+	Username textbox placeholder is not correct 
+ expected [true] but found [false],
+	Password textbox placeholder is not correct 
+ expected [true] but found [false],
+	Linkedin image is not present 
+ expected [true] but found [false],
+	User male image is not present 
+ expected [true] but found [false],
+	Fingerprint image is not present 
+ expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.automation.hackathon.TraditionalTests.Test1_LoginPageUIElementsTest(TraditionalTests.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace32640159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32640159'><pre>java.lang.AssertionError: The following asserts failed:
+	Form header is not correct 
+ expected [true] but found [false],
+	Password label is not present  
+ expected [true] but found [false],
+	Username textbox placeholder is not correct 
+ expected [true] but found [false],
+	Password textbox placeholder is not correct 
+ expected [true] but found [false],
+	Linkedin image is not present 
+ expected [true] but found [false],
+	User male image is not present 
+ expected [true] but found [false],
+	Fingerprint image is not present 
+ expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.automation.hackathon.TraditionalTests.Test1_LoginPageUIElementsTest(TraditionalTests.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>98</td>
+<td>com.automation.hackathon.TraditionalTests@d8f54a</td></tr>
 </table><p>
 </body>
 </html>

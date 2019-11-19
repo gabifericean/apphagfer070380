@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.automation.hackathon.commons.Configuration;
 import com.automation.hackathon.commons.TestBase;
 import com.automation.hackathon.pageobjects.FinancialOverviewPage;
 import com.automation.hackathon.pageobjects.LoginFormPage;
@@ -162,9 +163,7 @@ public class TraditionalTests extends TestBase {
 	 */
 	@Test
 	public void Test5_DynamicContentTest(){	
-		driver.navigate().to("https://demo.applitools.com/hackathon.html?showAd=true");
-		//driver.navigate().to("https://demo.applitools.com/hackathonV2.html?showAd=true");
-		
+		driver.navigate().to(Configuration.URL_TEST_5);		
 		LoginFormPage loginPage = new LoginFormPage(driver);
 		SoftAssert softAssert = new SoftAssert();
 		loginPage.fillUsernameTextbox("username");
@@ -179,4 +178,3 @@ public class TraditionalTests extends TestBase {
 		softAssert.assertAll();
 	}
 }
-

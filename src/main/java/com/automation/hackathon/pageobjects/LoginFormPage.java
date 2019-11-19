@@ -24,7 +24,6 @@ public class LoginFormPage extends TestBase {
 	/*
 	 * Define elements
 	 */
-
 	//<<Login Form>> header
 	@FindBy(how = How.XPATH, using = "//h4[@class='auth-header']")
 	private WebElement elemLoginFormHeader;

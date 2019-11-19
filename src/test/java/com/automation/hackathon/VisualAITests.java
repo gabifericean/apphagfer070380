@@ -2,8 +2,8 @@ package com.automation.hackathon;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.applitools.eyes.MatchLevel;
-import com.applitools.eyes.RectangleSize;
 import com.automation.hackathon.commons.Configuration;
 import com.automation.hackathon.commons.TestBase;
 import com.automation.hackathon.pageobjects.FinancialOverviewPage;
@@ -32,9 +32,6 @@ public class VisualAITests extends TestBase {
 		eyes.closeAsync();
 	}
 	
-	
-	
-	
 	@DataProvider(name = "login")
 	public Object[][] LoginDataProvider() {
 	 return new Object[][] {
@@ -60,7 +57,7 @@ public class VisualAITests extends TestBase {
 	 * 
 	 * 1. Warning message for first case is not the same. Actual message is:'Please enter both username and password'; Expected message is:Both Username and Password must be present
 	 * 2. Warning message for second case is not the same. Actual message is not displayed; Expected message is: Password must be present
-	 * 3. Warning message for third case is not positioned well. THIS ISSUE IS NOT CATCHED BY TEST!!!
+	 * 3. Warning message for third case is not positioned well. THIS ISSUE IS NOT FOUND BY TEST!!!
 	 */
 	@Test(dataProvider = "login")
 	public void Test2_DataDrivenTest(String username, String password, String expectedMessage, String testName){
@@ -70,7 +67,6 @@ public class VisualAITests extends TestBase {
 		loginPage.fillPasswordTextbox(password);
 		loginPage.clickLoginButton();
 		eyes.checkWindow("Login Window");
-		//eyes.check(testName, Target.window().ignoreDisplacements());
 		eyes.closeAsync();			
 	}
 	
@@ -92,14 +88,12 @@ public class VisualAITests extends TestBase {
 		loginPage.clickLoginButton();
 		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		FinancialOverviewPage financialOverview = new FinancialOverviewPage(driver);
-
 		financialOverview.clickAmountLink();
 		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		eyes.checkWindow("Amount - sorted");
 		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		eyes.closeAsync();	
-		
 	}
 	
 	/**
@@ -112,8 +106,7 @@ public class VisualAITests extends TestBase {
 	 */
 	@Test
 	public void Test4_CanvasChartTest(){
-		eyes.open(driver, "Login App", "Test4_CanvasChartTest");
-		
+		eyes.open(driver, "Login App", "Test4_CanvasChartTest");		
 		LoginFormPage loginPage = new LoginFormPage(driver);
 		loginPage.fillUsernameTextbox("username");
 		loginPage.fillPasswordTextbox("password");
@@ -149,10 +142,7 @@ public class VisualAITests extends TestBase {
 		loginPage.clickLoginButton();
 		waitFor(Configuration.WAIT_MILLIS_MED_4);
 		eyes.checkWindow("Dynamic Content");
-		waitFor(Configuration.WAIT_MILLIS_MED_4);
-		waitFor(Configuration.WAIT_MILLIS_MED_4);
-		waitFor(Configuration.WAIT_MILLIS_MED_4);
+		waitFor(3*Configuration.WAIT_MILLIS_MED_4);
 		eyes.closeAsync();
 	}	
-	
 }

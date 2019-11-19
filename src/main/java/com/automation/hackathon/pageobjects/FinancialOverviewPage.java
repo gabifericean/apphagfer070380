@@ -104,11 +104,6 @@ public class FinancialOverviewPage extends TestBase {
 		return all;
 	}	
 	
-	/*public void clickCompareExpensesLink(){
-		waitForElementToBeVisible(elemFinancialOverviewAmountLink);
-		elemFinancialOverviewAmountLink.click();
-	}*/
-	
 	public void clickShowDataForNextYearLink(){
 		waitForElementToBeVisible(elemShowDataForNextYearLink);
 		elemShowDataForNextYearLink.click();

@@ -2,6 +2,7 @@ package com.automation.hackathon.commons;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
 
@@ -61,14 +62,18 @@ public class TestBase {
 		}
 	}
 
-	public static void startBrowser() {
+	public void startBrowser() {
 		ChromeOptions optionsCH = new ChromeOptions();
 		optionsCH.addArguments("--start-maximized");
 		optionsCH.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		optionsCH.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		optionsCH.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-		final String CHROME_DRIVER = "resources\\drivers\\chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", CHROME_DRIVER);
+		String driverName =  System.getProperty("os.name").contains("Windows") ? "chromedriver.exe" : "chromedriver_mac";
+		URL chromeDriver = getClass().getResource("/drivers/" + driverName);
+		System.setProperty("webdriver.chrome.driver", chromeDriver.getPath());
+		
+		//final String CHROME_DRIVER = "resources\\drivers\\chromedriver.exe";
+		//System.setProperty("webdriver.chrome.driver", CHROME_DRIVER);
 		driver = new ChromeDriver(optionsCH);
 		driver.manage()
 			.timeouts()
